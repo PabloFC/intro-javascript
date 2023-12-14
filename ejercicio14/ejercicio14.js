@@ -19,8 +19,13 @@
  *  1 galon = 3,78541 litros
  */
 
-function precioEnLitros() {
+function precioEnLitros(galon) {
   //Escribe tu codigo aqui
+  let galones = galon * 3.78541;
+  let gasolina = 1.333;
+  let precio = parseFloat(galones * gasolina);
+
+  return precio;
 }
 
 module.exports = { precioEnLitros };

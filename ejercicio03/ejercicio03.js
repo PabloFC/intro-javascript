@@ -5,8 +5,18 @@
  * Recuerda usar la estructura condicional If.
  */
 
-function compareThreeNumbers() {
-//Escribe tu codigo aqui
+const { compare } = require("semver");
+
+function compareThreeNumbers(a, b, c) {
+  if (a === b && b === c) {
+    return "iguales";
+  } else if (a >= b && a >= c) {
+    return a;
+  } else if (b >= a && b >= c) {
+    return b;
+  } else if (c >= a && c >= b) {
+    return c;
+  }
 }
 
 module.exports = { compareThreeNumbers };

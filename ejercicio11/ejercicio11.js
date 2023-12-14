@@ -13,8 +13,19 @@
  *  descuento correspondiente.
  */
 
-function descuentoCompra() {
+function descuentoCompra(cantidad) {
   //Escribe tu codigo aqui
+  if (cantidad < 500) {
+    return cantidad;
+  } else if (cantidad >= 500 && cantidad <= 1000) {
+    return cantidad * 0.95;
+  } else if (cantidad >= 1000 && cantidad <= 7000) {
+    return cantidad * 0.9;
+  } else if (cantidad >= 7000 && cantidad <= 15000) {
+    return cantidad * 0.8;
+  } else if (cantidad > 15000) {
+    return cantidad * 0.75;
+  }
 }
 
 module.exports = { descuentoCompra };

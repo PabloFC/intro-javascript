@@ -13,8 +13,25 @@
  *  trabajador podria no entrar en ninguna categoria.
  */
 
-function nuevoSalario() {
-  //Escribe tu codigo aqui
+function nuevoSalario(sueldo, cat) {
+  switch (cat) {
+    case 1:
+      return (sueldo *= 1.15);
+      break;
+
+    case 2:
+      return (sueldo *= 1.1);
+      break;
+    case 3:
+      return (sueldo *= 1.06);
+      break;
+    case 4:
+      return (sueldo *= 1.03);
+      break;
+    case 5:
+      return sueldo;
+      break;
+  }
 }
 
 module.exports = { nuevoSalario };
