@@ -5,8 +5,6 @@
  * variables y retorne un string con las variables concatenadas.
  */
 
-// releevant-bootcamp/intro-javascript
-
 function swapVariables(a, b) {
   let c = a;
   a = b;

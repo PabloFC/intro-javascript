@@ -9,6 +9,6 @@ describe("retorna el angulo entre el la 12 aguja del reloj y el numero introduci
     expect(simpleClockAngle(5)).toBe(30);
   });
   test("lanza un error al haber introducido un numero incorrecto", () => {
-    expect(simpleClockAngle(60)).toBe("El numero introducido es incorrecto");
+    expect(simpleClockAngle(61)).toBe("El numero introducido es incorrecto");
   });
 });

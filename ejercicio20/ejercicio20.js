@@ -10,8 +10,21 @@
  *  del programa.
  */
 
-function adivinarContrasena() {
-  //Escribe tu codigo aqui
+function adivinarContrasena(clave, contraseña) {
+  let contador = 0;
+
+  while (contador < 3) {
+    if (clave[contador] === contraseña) {
+      console.log(clave[contador]);
+      console.log("Contraseña correcta, bienvenido");
+      return;
+    } else {
+      console.log("Contraseña incorrecta, intentelo de nuevo");
+    }
+    contador++;
+  }
+
+  console.log("Has agotado tus intentos");
 }
 
 module.exports = { adivinarContrasena };
