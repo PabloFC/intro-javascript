@@ -15,7 +15,6 @@ function adivinarContrasena(clave, contraseña) {
 
   while (contador < 3) {
     if (clave[contador] === contraseña) {
-      console.log(clave[contador]);
       console.log("Contraseña correcta, bienvenido");
       return;
     } else {

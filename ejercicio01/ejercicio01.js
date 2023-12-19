@@ -1,3 +1,5 @@
+//@ts-check
+
 /**
  *  Ejercicio 1
  * Dadas dos variables numéricas A y B,
