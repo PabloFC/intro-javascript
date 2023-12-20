@@ -5,7 +5,12 @@
  */
 
 function cuboNumerosArray() {
-  //Escribe tu codigo aqui
+  let array = [];
+  for (let i = 1; i <= 10; i++) {
+    array[i] = i * i * i;
+    console.log(`El cubo de ${i} es ${array[i]}`);
+  }
+  return array;
 }
 
 module.exports = { cuboNumerosArray };
