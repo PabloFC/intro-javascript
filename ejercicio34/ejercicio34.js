@@ -7,13 +7,17 @@
  *  al cuarto intento.
  */
 
-function generateRandomNumber() {
-  //Escribe tu codigo aqui
+function generateRandomNumber(userNum) {
+  let randomNumber = Math.floor(Math.random() * (10 - 1) + 1);
+  return randomNumber;
 }
 
 function playGame(randomNumber, arrayNum) {
   //Escribe tu codigo aqui
 }
+
+generateRandomNumber();
+playGame([1, 3, 5, 3, 7, 9, 5, 3, 8, 9]);
 module.exports = {
   generateRandomNumber,
   playGame,

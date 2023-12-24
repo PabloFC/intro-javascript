@@ -9,7 +9,7 @@
  * [2,3,4], [4,5,6] y [8,15,24]
  */
 
-function multiplicarElementosArray() {
+function multiplicarElementosArray(arrayUno, arrayDos, resultado) {
   //Escribe tu codigo aqui
 }
 

@@ -11,8 +11,14 @@
 // Como el aparato para medir los sonidos puede fallar, tener en cuenta que si
 // el numero de sonidos es 0, es un error y debe de imprimir error.
 
-function temperaturaGrillo() {
+function temperaturaGrillo(N) {
   //Escribe tu codigo aqui
+  let temperatura = 0;
+  if (N === 0) {
+    return `Error`;
+  } else {
+    return (temperatura = N / 4 + 40);
+  }
 }
 
 module.exports = { temperaturaGrillo };

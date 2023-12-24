@@ -5,8 +5,11 @@
  *  la cuenta atras por consola y cuando llegue al final, se imprimira "Ring!! y el programa acabara .
  */
 
-function timer() {
-  //Escribe tu codigo aqui
+function timer(segundos) {
+  for (let i = segundos - 1; i >= 0; i--) {
+    console.log(i);
+  }
+  console.log("¡¡Ring!!");
 }
-
+timer(3);
 module.exports = { timer };

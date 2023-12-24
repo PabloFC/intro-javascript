@@ -4,8 +4,10 @@
  * parametros invertido.
  */
 
-function invertArray() {
-  //Escribe tu codigo aqui
+function invertArray(array) {
+  const reversedArray = array.reverse();
+  return reversedArray;
 }
+invertArray([1, 2, 3, 4]);
 
 module.exports = { invertArray };
