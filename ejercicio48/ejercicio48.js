@@ -7,8 +7,8 @@
  * '<' y '>'
  */
 
-function ordenarArray() {
-  //Escribe tu codigo aqui
+function ordenarArray(array) {
+  return array.sort();
 }
 
 module.exports = { ordenarArray };

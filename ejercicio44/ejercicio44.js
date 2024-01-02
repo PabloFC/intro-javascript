@@ -16,8 +16,31 @@
  * EJEMPLO: Si introduce 1,2,4. El usuario recibira 6.
  */
 
-function seleccionarNumeroMenu() {
-  //Escribe tu codigo aqui
+function seleccionarNumeroMenu(option, num1, num2) {
+  let result;
+  switch (option) {
+    case 1:
+      result = num1 + num2;
+      return result;
+
+    case 2:
+      result = num1 - num2;
+      return result;
+
+    case 3:
+      result = num1 * num2;
+      return result;
+
+    case 4:
+      result = num1 / num2;
+      return result;
+
+    case 5:
+      return "Has salido correctamente del programa";
+
+    default:
+      return "No has introducido un numero correcto. El numero debe estar entre 1 y 5";
+  }
 }
 
 module.exports = { seleccionarNumeroMenu };

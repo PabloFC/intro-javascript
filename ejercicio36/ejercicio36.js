@@ -10,7 +10,17 @@
  */
 
 function multiplicarElementosArray(arrayUno, arrayDos, resultado) {
-  //Escribe tu codigo aqui
+  arrayUno = [];
+  arrayDos = [];
+  resultado = [];
+
+  for (let i = 0; i < 10; i++) {
+    arrayUno[i] = Math.floor(Math.random() * 20) + 1;
+    arrayDos[i] = Math.floor(Math.random() * 20) + 1;
+
+    resultado[i] = arrayUno[i] * arrayDos[i];
+  }
+  return { arrayUno, arrayDos, resultado };
 }
 
 module.exports = { multiplicarElementosArray };

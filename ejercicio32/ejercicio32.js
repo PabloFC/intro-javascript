@@ -13,8 +13,19 @@
  * Debera retornar un string que diga lo siguiente: `El precio total es de X`
  */
 
-function menuRestaurante() {
-  //Escribe tu codigo aqui
+function menuRestaurante(bocadillos, refrescos, cervezas, pan) {
+  const precioBocadillo = 1.5;
+  const precioRefresco = 1.05;
+  const precioCerveza = 0.75;
+  const precioPan = 2;
+
+  const total =
+    bocadillos * precioBocadillo +
+    refrescos * precioRefresco +
+    cervezas * precioCerveza +
+    pan * precioPan;
+
+  return `El precio total es de ${total}`;
 }
 
 module.exports = { menuRestaurante };
